@@ -1,6 +1,7 @@
 import React from 'react'
 const bgimg = '/bg-paper-type.png';
 import logo from '../public/sticker-peace .png'
+import heroimg from '../public/beautiful-street-market-sunset.jpg'
 import Image from 'next/image';
 const Hero = () => {
     const backgroundStyle = {
@@ -9,26 +10,67 @@ const Hero = () => {
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
     };
+    const backgroundStyles = {
+        right: '4.5rem',
+        width: '44%',
+        height: '200px',
+        zIndex: 2,
+    };
+    const titleSize = 'clamp(5em, 7.5vw, 7.5em)';
+    const borderRadius = `calc(${titleSize} * 0.4)`;
+    const colorLightRGB = '242, 237, 233';
+    const colorLight = `rgba(${colorLightRGB}, 1)`;
+
+    const cornerStyles = {
+        left: '-0px',
+        width: borderRadius,
+        height: borderRadius,
+        backgroundColor: 'transparent',
+        transform: 'translate(-100%, 0%) rotate(90deg)', 
+        backgroundImage: `radial-gradient(circle at 100% 100%, transparent ${borderRadius}, ${colorLight} calc(${borderRadius} + 0.5px))`, 
+    };
+    // const cornerStylesbottom = {
+    //     bottom: '-0px', // Adjust bottom positioning as a percentage for responsiveness
+    //     right: '-5%', 
+    //     width: borderRadius,
+    //     height: borderRadius,
+    //     backgroundColor: 'transparent',
+    //     transform: 'translate(-100%, 0%) rotate(90deg)', 
+    //     backgroundImage: `radial-gradient(circle at 100% 100%, transparent ${borderRadius}, ${colorLight} calc(${borderRadius} + 0.5px))`, 
+    // };
+
+
     return (
         <div>
-            <div style={backgroundStyle} className='h-screen w-full justify-center flex  '>
+            <div style={backgroundStyle} className='h-auto w-full justify-center flex  pt-20 flex-col items-center '>
                 <div className='flex flex-col max-w-[1200px] w-full  items-center pt-10'>
-                    <div className='flex justify-between items-center w-full '>
-                        <span className='font-thunder-lc uppercase flex text-[180px] text-[#21211fe0]'>let's change</span>
-                        <div className='h-[8rem] w-1/3 border-1 justify-between items-center flex p-2 outline-none bg-[#c7ed90] border-[#c7ed90] rounded-[100px]'>
+                    <div className='flex justify-between items-center max-h-max h-[150px]  w-full '>
+                        <span className='font-thunder-lc uppercase flex text-[120px] lg:text-[180px] text-[#21211fe0]'>let's change</span>
+                        <div className='h-[8rem] w-1/3 border-1 justify-between items-center flex p-10 outline-none bg-[#c7ed90] border-[#c7ed90] rounded-[100px]'>
+                            <span className='text-3xl font-thunder-lc font-bold h-max '>
+                                Now finding a shop is easy
+                            </span>
                             <div>
-                                fast food
-                            </div>
-                            <div>
-                                <Image src={logo} alt='logo' className='h-14 w-10'/>
-                                
+                                <Image src={logo} alt='logo' className='h-14 w-10 transition-transform duration-1000 hover:animate-tornado' />
+
                             </div>
                         </div>
 
                     </div>
-                    <div>
-                    </div>
+
                 </div>
+                <div className='w-full relative mb-14 '>
+                    <div style={backgroundStyle} className='absolute right-[4.5rem] flex rounded-bl-3xl rounded-br-3xl  w-[44%] h-[150px] lg:h-[200px] z-2'>
+                        <div   style={cornerStyles} className='absolute left-[-64px] flex transparent bg-white/10 h-16 w-16 '></div>
+                      
+                        <span className='font-thunder-lc uppercase flexn lg:h-[200px] text-[120px] lg:text-[180px] text-[#21211fe0] pl-12 pb-9 '>business!</span>
+                    </div>
+                    <div className='w-full justify-center flex items-center '>
+                        <Image src={heroimg} alt='heroimg' className='h-[510px] w-[84%] lg:w-[90%] flex rounded-[50px]' />
+                    </div>
+
+                </div>
+
             </div>
 
         </div>

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
 const bgimg = '/bg-paper-type.png';
-import logo from '../public/logo-removebg-preview.png'
+import logo from '../public/Your_paragraph_text-removebg-preview.png'
 import Image from 'next/image';
 const Navbar = () => {
     const backgroundStyle = {
@@ -25,10 +25,10 @@ const Navbar = () => {
                             <Link href='/' className='h-max w-max flex absolute transform  translate-y-[105%]  group-hover:translate-y-[5%]  transition-transform duration-700  group-hover:opacity-100'>notification</Link>
                         </li>
                     </ul>
-                    <div className='absolute left-[34%] hover:cursor-pointer top-[-108px]'>
-                      <Link href='/page'><Image src={logo} alt='logo' className='h-[80%] w-[80%]' /></Link>  
+                    <div className='absolute left-[39%] h-max hover:cursor-pointer top-[-80px]'>
+                      <Link href='/page' className=''><Image src={logo} alt='logo' className='h-[40%] w-[50%]  transform transition-transform duration-300 hover:-rotate-6' /></Link>  
                     </div>
-                    <ul className='flex gap-[7.5rem] overflow-hidden items-center justify-center relative w-[460px] h-2/3 '>
+                    <ul className='flex gap-[7.5rem] overflow-hidden items-center justify-between relative w-[400px] h-2/3 '>
                         <li className='uppercase group font-thunder-lc text-3xl relative  h-full text-black'>
                             <Link href='/' className='h-max w-max flex absolute transform translate-y-0  group-hover:translate-y-[-115%] transition-transform opacity-100 duration-700'>offers%</Link>
                             <Link href='/' className='h-max w-max flex absolute transform  translate-y-[105%]  group-hover:translate-y-[5%]  transition-transform duration-700  group-hover:opacity-100'>offwers%</Link>

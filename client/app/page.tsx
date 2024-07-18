@@ -13,7 +13,7 @@ export default function Home() {
     backgroundRepeat: 'no-repeat',
   };
   return (
-    <main style={backgroundStyle} className="flex min-h-screen flex-col  ">
+    <main style={backgroundStyle} className="flex min-h-screen h-max flex-col  ">
       <Header />
       <Navbar />
       <Hero />
