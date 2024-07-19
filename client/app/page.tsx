@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
+import Notification from "@/components/notification";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 const bgimg = '/black-bg.png';
@@ -17,6 +18,7 @@ export default function Home() {
       <Header />
       <Navbar />
       <Hero />
+      <Notification/>
 
     </main>
   );
