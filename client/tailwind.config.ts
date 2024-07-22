@@ -75,10 +75,11 @@ const config: Config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        tornado: 'tornado 1s ease-in-out infinite',
+        "tornado": 'tornado 1s ease-in-out infinite',
       },
       fontFamily: {
         'thunder-lc': ['"Thunder LC"', 'sans-serif'],
+        'ShackletonTest':['"ShackletonTest"', 'sans-serif'],
         'DM-sans':['"DM Sans"', 'sans-serif'],
         'Raleway':['"Raleway"', 'sans-serif'],
       },

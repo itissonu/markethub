@@ -6,7 +6,7 @@ const Header = () => {
 
     return (
         <div>
-            <div className=' fixed top-0 left-0 bg-[#232120] h-[3.5rem] right-0 bottom-0 overflow-hidden z-1'></div>
+            <div className=' fixed top-0 left-0 bg-[#232120] h-[4.5rem] right-0 bottom-0 overflow-hidden z-10'></div>
             <div className='flex justify-center items-center'>
                 <div className=' w-full max-w-[1200px] h-650 z-[2] items-center pt-1  flex justify-between hover:cursor-pointer'>
                     <div className='flex gap-2 text-white '>
