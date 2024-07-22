@@ -11,7 +11,7 @@ const Notification = () => {
         backgroundRepeat: 'no-repeat',
     };
     return (
-        <div style={backgroundStyle} className='w-full flex flex-col gap-4 items-center justify-center pt-8 ' >
+        <div style={backgroundStyle} className='w-full flex flex-col gap-4 items-center justify-center pt-8 rounded-bl-[40px] rounded-br-[40px]' >
             <div className='flex w-[1200px] items-center justify-between'>
                 <div className=' w-96 border-black border-dashed border-2'></div>
                 <span className='text-[50px] font-thunder-lc uppercase font-bold text-[#222020]'>Notifications</span>

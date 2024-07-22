@@ -5,6 +5,7 @@ import logo from '../public/sticker-peace .png'
 import heroimg from '../public/beautiful-street-market-sunset.jpg'
 import greenlogo from '../public/green-logo.png'
 import Image from 'next/image';
+
 const Hero = () => {
     const backgroundStyle = {
         backgroundImage: `url(${bgimg})`,

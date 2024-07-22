@@ -80,6 +80,7 @@ const config: Config = {
       fontFamily: {
         'thunder-lc': ['"Thunder LC"', 'sans-serif'],
         'DM-sans':['"DM Sans"', 'sans-serif'],
+        'Raleway':['"Raleway"', 'sans-serif'],
       },
     },
   },
