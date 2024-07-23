@@ -27,7 +27,7 @@ export default function Home() {
       <Category />
       <Benifits />
       <Marquees />
-      <Footer />
+      {/* <Footer /> */}
 
     </main>
   );

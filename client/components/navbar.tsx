@@ -15,10 +15,11 @@ const Navbar = () => {
         <div style={backgroundStyle} className="sticky top-0 left-0 w-full h-[5.5rem] z-50 rounded-tl-[40px] flex-col justify-center items-center  flex rounded-tr-[40px] " >
             <div className='max-w-[1200px] h-[90%] w-full  justify-center items-center m-0'>
                 <div className=' items-center justify-between flex w-full h-[75%] mt-4  '>
-                    <ul className='flex gap-24 overflow-hidden relative w-[600px] h-2/3 '>
+                    <ul className='flex gap-28 overflow-hidden relative w-[600px] h-2/3 '>
                         <li className='uppercase group font-thunder-lc text-3xl relative  h-full text-black'>
-                            <Link href='/stores' className='h-max w-max flex absolute transform translate-y-0  group-hover:translate-y-[-115%] transition-transform opacity-100 duration-700'><Store/> stores </Link>
-                            <Link href='/stores' className='h-max w-max flex absolute transform  translate-y-[105%]  group-hover:translate-y-[5%]  transition-transform duration-700  group-hover:opacity-100'>stores</Link>
+                            <Link href='/stores' className='h-max w-max flex items-centerjc
+                             absolute transform translate-y-0  group-hover:translate-y-[-115%] transition-transform opacity-100 duration-700'><Store className=''/> stores </Link>
+                            <Link href='/stores' className='h-max w-max flex absolute transform  translate-y-[104%]  group-hover:translate-y-[5%]  transition-transform duration-700  group-hover:opacity-100'><Store className=''/> stores</Link>
                         </li>
                         
 
@@ -37,8 +38,8 @@ const Navbar = () => {
                         </li>
 
                         <li className='uppercase group font-thunder-lc text-3xl relative  h-full text-black'>
-                            <Link href='/' className='h-max w-max flex absolute transform translate-y-0  group-hover:translate-y-[-115%] transition-transform opacity-100 duration-700'>contact</Link>
-                            <Link href='/' className='h-max w-max flex absolute transform  translate-y-[105%]  group-hover:translate-y-[5%]  transition-transform duration-700  group-hover:opacity-100'>contact</Link>
+                            <Link href='/priceboard' className='h-max w-max flex absolute transform translate-y-0  group-hover:translate-y-[-115%] transition-transform opacity-100 duration-700'>price board</Link>
+                            <Link href='/priceboard' className='h-max w-max flex absolute transform  translate-y-[105%]  group-hover:translate-y-[5%]  transition-transform duration-700  group-hover:opacity-100'>price board</Link>
                         </li>
                         <li className='uppercase group font-thunder-lc text-3xl relative  h-full text-black border-black border-2 w-28 bg-[#fcb2d9] rounded-2xl '>
                             <Link href='/' className='h-max w-max flex absolute transform translate-y-0  group-hover:translate-y-[-115%] transition-transform left-[23%] top-[2px] opacity-100 duration-700'>signup</Link>

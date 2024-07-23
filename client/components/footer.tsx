@@ -3,6 +3,7 @@ import eagel from '../public/eagle.svg'
 import Image from 'next/image';
 import bg5 from '../public/red-circle-removebg-preview.png'
 const bgimg = '/bg-paper-type.png';
+const bgimgblk = '/texture-dark.jpg';
 
 const backgroundStyle = {
     backgroundImage: `url(${bgimg})`,
@@ -10,9 +11,15 @@ const backgroundStyle = {
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
 };
+const backgroundStyleblack = {
+    backgroundImage: `url(${bgimgblk})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+};
 const Footer = () => {
     return (
-        <div className=' flex-flex-col  w-full gap-4'>
+        <div style={backgroundStyleblack} className=' flex-flex-col   w-full gap-4'>
             <div className='h-60 w-full flex items-center justify-center'>
                 <div className='max-w-[1200px] w-full font-thunder-lc flex justify-between gap-2  text-white'>
                     <div className='flex flex-col gap-3 uppercase '>
