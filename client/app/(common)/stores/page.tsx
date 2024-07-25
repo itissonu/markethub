@@ -11,6 +11,8 @@ import {
 
 import Image from 'next/image';
 import React from 'react'
+import Link from 'next/link';
+import Marquee from 'react-fast-marquee';
 
 
 const bgimg = '/bg-paper-type.png';
@@ -22,7 +24,7 @@ const backgroundStyle = {
 };
 const page = () => {
   return (
-    <div style={backgroundStyle} className='flex- flex-col gap-8 pb-10 ' >
+    <div style={backgroundStyle} className='flex overflow-hidden flex-col gap-8 pb-10 ' >
       <div className="relative text-center text-white">
         <video
           autoPlay
@@ -45,7 +47,7 @@ const page = () => {
             </SelectContent>
           </Select>
 
-        
+
           <div className=' p-2  group hover:bg-[#ffc719] transparent border-4 shadow-md w-[85%] h-[96px] border-[#ffc719] rounded-sm flex justify-center items-center'>
             <Search className='size-8 text-[#ffc719] group-hover:text-black' />
             <Input
@@ -67,12 +69,22 @@ const page = () => {
           <span className='uppercase font-thunder-lc text-[100px] leading-none flex'>get your <span className='ml-3 text-[#e7acce]'>desired shop</span></span>
           <span className='uppercase font-thunder-lc text-[100px] flex leading-none '>shop now</span>
         </div>
-        <div className=' w-full flex flex-col items-center justify-center'>
+        <div className=' w-full flex flex-col gap-7 items-center justify-center'>
           <div>
             <Button className='transition-colors transition-bg transition-filter duration-200 ease-in-out text-white bg-black hover:bg-white filter hover:brightness-125' style={{
               transition: 'color .25s cubic-bezier(.165,.84,.44,1), background-color .25s cubic-bezier(.4,0,.2,1), filter .25s cubic-bezier(.4,0,.2,1)',
             }} >sort</Button>
           </div>
+          <div className=' bg-[#ffc719] p-2 '>
+
+                <Marquee speed={50} gradient={false} >
+                    {[...Array(10)].map((_, index) => (
+                        <div key={index} className='font-thunder-lc text-3xl ml-3 mr-3 uppercase'>
+                            the town troops
+                        </div>
+                    ))}
+                </Marquee>
+            </div>
           <div className='w-full max-w-[1250px]  flex justify-center items-center flex-wrap gap-3 '>
             <div className='w-[30%] rounded-2xl group  overflow-hidden h-[450px] border-4 border-[#3d3935] shadow-sm'>
               <div className='h-[55%] flex flex-col justify-between'>
@@ -100,10 +112,12 @@ const page = () => {
               </div>
               <div className=' h-[55%] border-t-4 relative border-[#3d3935] '>
                 <div className=' w-full flex relative'>
-                  <div className="z-10 hover:scale-105 transition-all duration-500 hover:cursor-pointer active:scale-95 absolute top-[-27px] bg-[#ff671d] left-[18%] uppercase font-thunder-lc text-2xl border-4 text-[#3d3935] border-[#3d3935] rounded-[32px] w-2/3 h-16 items-center justify-center flex">
-                    click here
-                    <span className="absolute h-full border-b-[8px] border-[#3d3935] left-0 top-[2px] w-full rounded-[32px]"></span>
-                  </div>
+                  <Link href='/stores/1'>
+                    <div className="z-10 hover:scale-105 transition-all duration-500 hover:cursor-pointer active:scale-95 absolute top-[-27px] bg-[#ff671d] left-[18%] uppercase font-thunder-lc text-2xl border-4 text-[#3d3935] border-[#3d3935] rounded-[32px] w-2/3 h-16 items-center justify-center flex">
+                      click here
+                      <span className="absolute h-full border-b-[8px] border-[#3d3935] left-0 top-[2px] w-full rounded-[32px]"></span>
+                    </div>
+                  </Link>
 
 
                 </div>

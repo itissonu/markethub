@@ -63,6 +63,14 @@ const config: Config = {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
         },
+        swing: {
+          '0%': { transform: 'rotate(0deg)' },
+          '20%': { transform: 'rotate(15deg)' },
+          '40%': { transform: 'rotate(-10deg)' },
+          '60%': { transform: 'rotate(5deg)' },
+          '80%': { transform: 'rotate(-5deg)' },
+          '100%': { transform: 'rotate(0deg)' },
+        },
         tornado: {
           '0%, 100%': { transform: 'rotate(0deg)' },
           '50%': { transform: 'rotate(360deg)' },
@@ -75,7 +83,8 @@ const config: Config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "tornado": 'tornado 1s ease-in-out infinite',
+        tornado: 'tornado 1s ease-in-out infinite',
+        swing: 'swing 2s ease-in-out infinite',
       },
       fontFamily: {
         'thunder-lc': ['"Thunder LC"', 'sans-serif'],
